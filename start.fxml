@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="452.0" prefWidth="601.0" style="-fx-background-color: #4814d9;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf.MenuController">
+    <children>
+        <Button alignment="CENTER" layoutX="242.0" layoutY="211.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="29.0" prefWidth="118.0" text="Entrer" textFill="#3016c7">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label alignment="CENTER" layoutX="82.0" layoutY="149.0" prefHeight="62.0" prefWidth="437.0" text="Bienvenu(e) À mon Application ESALAF" textFill="WHITE">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="139.0" layoutY="389.0" text="Réalise par : ESSARHANI YOUSSEF" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="19.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

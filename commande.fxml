@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="600.0" style="-fx-background-color: #4814d9;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf.CommandeController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label layoutX="46.0" layoutY="359.0" text="Cin :" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+    <TextField fx:id="cin" layoutX="85.0" layoutY="355.0" prefHeight="25.0" prefWidth="186.0" promptText="Cin" />
+    <Label layoutX="28.0" layoutY="393.0" text="Produit :" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+    <TextField fx:id="prod" layoutX="84.0" layoutY="389.0" prefHeight="25.0" prefWidth="186.0" promptText="Produit" />
+
+    <Button fx:id="ok" layoutX="472.0" layoutY="363.0" onAction="#onSaveButtonClick" prefHeight="25.0" prefWidth="72.0" text="Save" />
+    <TextField fx:id="ido" layoutX="-192.0" layoutY="448.0" />
+    <Button fx:id="ok1" layoutX="472.0" layoutY="473.0" onAction="#onDeleteButtonClick" prefHeight="25.0" prefWidth="72.0" text="Delete" />
+    <TableView fx:id="mytab" layoutX="24.0" layoutY="74.0" onMouseClicked="#tablehandleButtonAction" prefHeight="274.0" prefWidth="558.0">
+        <columns>
+         <TableColumn fx:id="col_cin" prefWidth="121.0" text="Cin" />
+            <TableColumn fx:id="col_produit" minWidth="0.0" prefWidth="157.0" text="Produit" />
+            <TableColumn fx:id="col_quan" prefWidth="152.0" text="Quantité" />
+            <TableColumn fx:id="col_etat" prefWidth="126.00003051757812" text="État" />
+        </columns>
+    </TableView>
+    <Button layoutX="472.0" layoutY="435.0" mnemonicParsing="false" onAction="#onUpdateButtonClick" prefHeight="25.0" prefWidth="72.0" text="Update" />
+    <Button layoutX="14.0" layoutY="524.0" mnemonicParsing="false" onAction="#switchToMenu" text="Revenir au Menu">
+        <font>
+            <Font name="System Italic" size="12.0" />
+        </font></Button>
+    <Label layoutX="25.0" layoutY="439.0" text="Quantité :" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+    <TextField fx:id="quan" layoutX="84.0" layoutY="435.0" prefHeight="25.0" prefWidth="186.0" promptText="Quantité" />
+    <Button layoutX="472.0" layoutY="397.0" mnemonicParsing="false" onAction="#clear" prefHeight="25.0" prefWidth="72.0" text="Reset" />
+    <TextField fx:id="etat" layoutX="85.0" layoutY="473.0" prefHeight="25.0" prefWidth="186.0" promptText="Etat" />
+    <Label layoutX="53.0" layoutY="477.0" text="État :" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+    <TextField fx:id="filterField" layoutX="38.0" layoutY="39.0" promptText="Search" />
+    <Label layoutX="39.0" layoutY="14.0" text="Recherche :" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+
+</AnchorPane>

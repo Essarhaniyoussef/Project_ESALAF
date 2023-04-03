@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="600.0" style="-fx-background-color: #4814d9;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf.ClientController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label layoutX="28.0" layoutY="112.0" text="Nom :" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+   <TextField fx:id="nom" layoutX="75.0" layoutY="108.0" promptText="Nom" />
+   <Label layoutX="6.0" layoutY="150.0" text="Téléphone :" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+   <TextField fx:id="tele" layoutX="76.0" layoutY="146.0" promptText="Téléphone" />
+
+    <Button fx:id="ok" layoutX="78.0" layoutY="241.0" onAction="#onSaveButtonClick" prefHeight="25.0" prefWidth="72.0" text="Save" textFill="#4814d9">
+      <font>
+         <Font size="15.0" />
+      </font></Button>
+   <TextField fx:id="ido" layoutX="-192.0" layoutY="448.0" />
+   <Button fx:id="ok1" layoutX="78.0" layoutY="380.0" onAction="#onDeleteButtonClick" prefHeight="25.0" prefWidth="72.0" text="Delete" textFill="#4814d9">
+      <font>
+         <Font size="15.0" />
+      </font></Button>
+   <TableView fx:id="mytab" layoutX="228.0" layoutY="51.0" onMouseClicked="#tablehandleButtonAction" prefHeight="482.0" prefWidth="358.0">
+     <columns>
+         <TableColumn fx:id="col_nom" prefWidth="126.0" text="Nom" />
+         <TableColumn fx:id="col_tele" minWidth="0.0" prefWidth="128.0" text="Telephone" />
+         <TableColumn fx:id="col_cin" prefWidth="103.0" text="CIN" />
+     </columns>
+   </TableView>
+   <Button layoutX="79.0" layoutY="330.0" mnemonicParsing="false" onAction="#onUpdateButtonClick" prefHeight="25.0" prefWidth="72.0" text="Update" textFill="#4814d9">
+      <font>
+         <Font size="15.0" />
+      </font></Button>
+   <Button layoutX="14.0" layoutY="508.0" mnemonicParsing="false" onAction="#switchToMenu" text="Revenir au Menu">
+      <font>
+         <Font name="System Italic" size="12.0" />
+      </font></Button>
+   <Label layoutX="33.0" layoutY="194.0" text="CIN :" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+   <TextField fx:id="cin" layoutX="76.0" layoutY="190.0" promptText="CIN" />
+   <Button layoutX="79.0" layoutY="282.0" mnemonicParsing="false" onAction="#clear" prefHeight="25.0" prefWidth="72.0" text="Reset" textFill="#4814d9">
+      <font>
+         <Font size="15.0" />
+      </font></Button>
+   <TextField fx:id="filterField" layoutX="40.0" layoutY="31.0" promptText="Search" />
+   <Label layoutX="39.0" layoutY="14.0" text="Recherche :" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+</AnchorPane>
