@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="519.0" prefWidth="583.0" style="-fx-background-color: #4814d9;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.esalaf.ProduitController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label layoutX="61.0" layoutY="278.0" prefHeight="17.0" prefWidth="63.0" text="Nom :" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+    <TextField fx:id="nom" layoutX="106.0" layoutY="274.0" promptText="Nom" />
+    <Label layoutX="63.0" layoutY="319.0" prefHeight="17.0" prefWidth="37.0" text="Prix :" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+    <TextField fx:id="prix" layoutX="106.0" layoutY="315.0" promptText="Prix" />
+
+    <Button fx:id="ok" layoutX="390.0" layoutY="282.0" onAction="#onSaveButtonClick" prefHeight="25.0" prefWidth="72.0" text="Save" />
+    <TextField fx:id="ido" layoutX="-192.0" layoutY="448.0" />
+    <Button fx:id="ok1" layoutX="390.0" layoutY="385.0" onAction="#onDeleteButtonClick" prefHeight="25.0" prefWidth="72.0" text="Delete" />
+    <TableView fx:id="mytab" layoutX="13.0" layoutY="75.0" onMouseClicked="#tablehandleButtonAction" prefHeight="185.0" prefWidth="557.0">
+        <columns>
+            <TableColumn fx:id="col_nom" prefWidth="152.0" text="Nom" />
+            <TableColumn fx:id="col_prix" minWidth="0.0" prefWidth="152.00001525878906" text="Prix ( DH )" />
+            <TableColumn fx:id="col_quan" prefWidth="93.33331298828125" text="Quantité" />
+         <TableColumn fx:id="col_cat" prefWidth="163.999989827474" text="Catégories" />
+        </columns>
+    </TableView>
+    <Button layoutX="390.0" layoutY="351.0" mnemonicParsing="false" onAction="#onUpdateButtonClick" prefHeight="25.0" prefWidth="72.0" text="Update" />
+    <Button layoutX="14.0" layoutY="473.0" mnemonicParsing="false" onAction="#switchToMenu" prefHeight="17.0" prefWidth="112.0" text="Revenir au Menu">
+        <font>
+            <Font name="System Italic" size="12.0" />
+        </font></Button>
+    <Label layoutX="37.0" layoutY="368.0" text="Quantité :" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+    <TextField fx:id="quan" layoutX="106.0" layoutY="364.0" promptText="Quantité" />
+    <Button layoutX="390.0" layoutY="315.0" mnemonicParsing="false" onAction="#clear" prefHeight="25.0" prefWidth="72.0" text="Reset" />
+   <TextField fx:id="cat" layoutX="106.0" layoutY="410.0" promptText="Catégories" />
+   <Label layoutX="32.0" layoutY="406.0" text="Catégories :" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+    <TextField fx:id="filterField" layoutX="31.0" layoutY="38.0" promptText="Search" />
+    <Label layoutX="31.0" layoutY="14.0" text="Recherche :" textFill="WHITE">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font></Label>
+
+</AnchorPane>
